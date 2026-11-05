@@ -1,0 +1,151 @@
+cv:
+  name: Bryce A. Springfield
+  label: Predoctoral Researcher, MIT Sloan School of Management
+  email: baspring@mit.edu
+  location: Cambridge, MA
+  image: ""
+  summary: Empirical research in labor economics, industrial organization, and contentious politics.
+
+  social_networks:
+    - network: GitHub
+      username: bryceaspringfield
+    - network: LinkedIn
+      username: baspringfield
+
+  sections:
+    Education:
+      - institution: London School of Economics and Political Science
+        location: London, United Kingdom
+        url: https://www.lse.ac.uk/
+        area: Economics
+        studyType: M.Sc.
+        start_date: 2025-09
+        end_date: 2026-07
+        highlights:
+          - Labor economics track.
+          - "Dissertation: Strike Action and Neighborhood Labor Market Effects in the United States (advisor: Christiane Szerman)."
+
+      - institution: Princeton University
+        location: Princeton, NJ
+        url: https://www.princeton.edu/
+        area: Politics
+        studyType: A.B.
+        start_date: 2021-07
+        end_date: 2025-05
+        score: "GPA 3.7"
+        highlights:
+          - Tracks in Political Economy, Quantitative and Analytical Political Science, and Comparative Politics.
+          - Certificates in Latin American Studies and in Spanish Language and Culture.
+          - Dual enrollment at Universidad Torcuato Di Tella, Buenos Aires, 2022.
+
+    Experience:
+      - company: MIT Sloan School of Management
+        position: Predoctoral Researcher
+        location: Cambridge, MA
+        start_date: 2026
+        end_date: 2028
+        summary: Empirical research in industrial organization and environmental economics with Professors Mert Demirer and Catherine Wolfram.
+
+      - company: Industrial Relations Section, Princeton University
+        position: Research Assistant
+        location: Princeton, NJ
+        start_date: 2023
+        end_date: 2025
+        summary: Research assistance on three projects led by Ellora Derenoncourt.
+
+      - company: Policy Matters Ohio
+        position: Research Intern
+        location: Cleveland, OH
+        start_date: 2023
+        end_date: 2023
+        summary: Co-wrote two research reports on the Ohio labor market and analyzed their data.
+
+      - company: Make the Road New Jersey
+        position: Labor Organizer
+        location: Elizabeth, NJ
+        start_date: 2024
+        end_date: 2024
+
+      - company: Resistencia en Acción NJ
+        position: Tutor and Host
+        location: Princeton, NJ
+        start_date: 2023
+        end_date: 2025
+
+      - company: Affordable St Pete Coalition
+        position: Researcher and Organizer
+        location: St. Petersburg, FL
+        start_date: 2022
+        end_date: 2022
+
+      - company: Richie Floyd for St. Petersburg City Council
+        position: Lead Field Organizer
+        location: St. Petersburg, FL
+        start_date: 2021
+        end_date: 2021
+
+    Publications:
+      - title: "State of Working Ohio 2023: Working People Gaining Ground"
+        authors:
+          - Michael Shields
+          - Jazmine Amoako
+          - Bryce Springfield
+        publisher: Policy Matters Ohio
+        releaseDate: 2023-09
+        summary: Think-tank report.
+
+      - title: Still working for too little in Ohio, 2023
+        authors:
+          - Michael Shields
+          - Bryce Springfield
+        publisher: Policy Matters Ohio
+        releaseDate: 2023-07
+        summary: Think-tank report.
+
+    Awards:
+      - title: Kenneth L. Proulx Memorial Essay Award
+        awarder: Freedom From Religion Foundation
+        date: 2025-09
+
+      - title: Ansys Out in Science, Technology, Engineering, and Mathematics Scholarship
+        awarder: Ansys, Inc.
+        date: 2025-08
+
+      - title: Spirit of Dru Scholarship
+        awarder: The Dru Project
+        date: 2025-07
+
+      - title: AFLSE Scholarship
+        awarder: Alumni and Friends of the London School of Economics in the United States
+        date: 2025-06
+
+      - title: City Council Award for Excellence
+        awarder: City of St. Petersburg, Florida
+        date: 2022-12
+
+      - title: Valedictorian
+        awarder: Boca Ciega High School, Pinellas County Schools
+        date: 2021-05
+
+      - title: National College Match Scholarship
+        awarder: QuestBridge
+        date: 2020-12
+
+    Skills:
+      - name: Research
+        icon: fa-solid fa-magnifying-glass-chart
+        keywords: "Labor economics, contentious politics, Latin America"
+
+      - name: Programming
+        icon: fa-solid fa-code
+        keywords: "Stata, R, Python, Bash, LaTeX"
+
+    Languages:
+      - name: English
+        summary: "Native"
+
+      - name: Spanish
+        summary: "C1"
+
+      - name: Portuguese
+        summary: "B1"
