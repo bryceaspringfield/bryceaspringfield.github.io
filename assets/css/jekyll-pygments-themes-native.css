@@ -43,11 +43,7 @@
 .highlight .ge {
   color: #d0d0d0;
   font-style: italic;
-} /* Generic.Emph */ /* Generic.Error */
-.highlight .gh {
-  color: #ffffff;
-  font-weight: bold;
-} /* Generic.Heading */
+} /* Generic.Emph */ /* Generic.Error */ /* Generic.Heading */
 .highlight .gi {
   color: #589819;
 } /* Generic.Inserted */
@@ -60,7 +56,15 @@
 } /* Generic.Strong */ /* Generic.Subheading */
 .highlight .gt {
   color: #d22323;
-} /* Generic.Traceback */ /* Keyword.Constant */ /* Keyword.Declaration */ /* Keyword.Namespace */ /* Keyword.Pseudo */ /* Keyword.Reserved */ /* Keyword.Type */ /* Literal.Date */
+} /* Generic.Traceback */ /* Keyword.Constant */
+.highlight .kd {
+  color: #6ab825;
+  font-weight: bold;
+} /* Keyword.Declaration */ /* Keyword.Namespace */ /* Keyword.Pseudo */ /* Keyword.Reserved */
+.highlight .kt {
+  color: #6ab825;
+  font-weight: bold;
+} /* Keyword.Type */ /* Literal.Date */
 .highlight .m {
   color: #3677a9;
 } /* Literal.Number */
@@ -101,19 +105,25 @@
 } /* Name.Tag */ /* Name.Variable */ /* Operator.Word */
 .highlight .w {
   color: #666666;
-} /* Text.Whitespace */ /* Literal.Number.Float */ /* Literal.Number.Hex */
+} /* Text.Whitespace */
+.highlight .mf {
+  color: #3677a9;
+} /* Literal.Number.Float */
+.highlight .mh {
+  color: #3677a9;
+} /* Literal.Number.Hex */
 .highlight .mi {
   color: #3677a9;
 } /* Literal.Number.Integer */
 .highlight .mo {
   color: #3677a9;
-} /* Literal.Number.Oct */ /* Literal.String.Backtick */ /* Literal.String.Char */ /* Literal.String.Doc */ /* Literal.String.Double */
-.highlight .se {
-  color: #ed9d13;
-} /* Literal.String.Escape */
+} /* Literal.Number.Oct */ /* Literal.String.Backtick */ /* Literal.String.Char */ /* Literal.String.Doc */ /* Literal.String.Double */ /* Literal.String.Escape */
 .highlight .sh {
   color: #ed9d13;
-} /* Literal.String.Heredoc */ /* Literal.String.Interpol */ /* Literal.String.Other */ /* Literal.String.Regex */ /* Literal.String.Single */ /* Literal.String.Symbol */
+} /* Literal.String.Heredoc */ /* Literal.String.Interpol */ /* Literal.String.Other */ /* Literal.String.Regex */ /* Literal.String.Single */
+.highlight .ss {
+  color: #ed9d13;
+} /* Literal.String.Symbol */
 .highlight .bp {
   color: #24909d;
 } /* Name.Builtin.Pseudo */ /* Name.Variable.Class */ /* Name.Variable.Global */
