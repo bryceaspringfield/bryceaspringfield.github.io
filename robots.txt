@@ -1,4 +1,4 @@
 User-agent: *
-Disallow:
+Disallow: /t/
 
 Sitemap: https://bryceaspringfield.github.io/sitemap.xml
