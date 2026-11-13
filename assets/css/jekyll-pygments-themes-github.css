@@ -49,10 +49,7 @@
 } /* Generic.Inserted */
 .highlight .go {
   color: #888888;
-} /* Generic.Output */
-.highlight .gp {
-  color: #555555;
-} /* Generic.Prompt */
+} /* Generic.Output */ /* Generic.Prompt */
 .highlight .gs {
   font-weight: bold;
 } /* Generic.Strong */
@@ -137,7 +134,10 @@
 } /* Literal.Number.Integer */
 .highlight .mo {
   color: #009999;
-} /* Literal.Number.Oct */ /* Literal.String.Backtick */
+} /* Literal.Number.Oct */
+.highlight .sb {
+  color: #d01040;
+} /* Literal.String.Backtick */
 .highlight .sc {
   color: #d01040;
 } /* Literal.String.Char */
@@ -164,7 +164,10 @@
 } /* Name.Builtin.Pseudo */
 .highlight .vc {
   color: #008080;
-} /* Name.Variable.Class */ /* Name.Variable.Global */
+} /* Name.Variable.Class */
+.highlight .vg {
+  color: #008080;
+} /* Name.Variable.Global */
 .highlight .vi {
   color: #008080;
 } /* Name.Variable.Instance */
