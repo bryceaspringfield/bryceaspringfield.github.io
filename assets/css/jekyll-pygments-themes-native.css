@@ -64,7 +64,10 @@
 } /* Generic.Inserted */
 .highlight .go {
   color: #cccccc;
-} /* Generic.Output */ /* Generic.Prompt */
+} /* Generic.Output */
+.highlight .gp {
+  color: #aaaaaa;
+} /* Generic.Prompt */
 .highlight .gs {
   color: #d0d0d0;
   font-weight: bold;
@@ -185,7 +188,10 @@
 } /* Name.Builtin.Pseudo */
 .highlight .vc {
   color: #40ffff;
-} /* Name.Variable.Class */ /* Name.Variable.Global */
+} /* Name.Variable.Class */
+.highlight .vg {
+  color: #40ffff;
+} /* Name.Variable.Global */
 .highlight .vi {
   color: #40ffff;
 } /* Name.Variable.Instance */
