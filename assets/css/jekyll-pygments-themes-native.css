@@ -87,10 +87,7 @@
 .highlight .kn {
   color: #6ab825;
   font-weight: bold;
-} /* Keyword.Namespace */
-.highlight .kp {
-  color: #6ab825;
-} /* Keyword.Pseudo */
+} /* Keyword.Namespace */ /* Keyword.Pseudo */
 .highlight .kr {
   color: #6ab825;
   font-weight: bold;
@@ -129,10 +126,7 @@
 } /* Name.Entity */
 .highlight .ne {
   color: #bbbbbb;
-} /* Name.Exception */
-.highlight .nf {
-  color: #447fcf;
-} /* Name.Function */
+} /* Name.Exception */ /* Name.Function */
 .highlight .nl {
   color: #d0d0d0;
 } /* Name.Label */
@@ -149,11 +143,7 @@
 .highlight .nt {
   color: #6ab825;
   font-weight: bold;
-} /* Name.Tag */ /* Name.Variable */
-.highlight .ow {
-  color: #6ab825;
-  font-weight: bold;
-} /* Operator.Word */
+} /* Name.Tag */ /* Name.Variable */ /* Operator.Word */
 .highlight .w {
   color: #666666;
 } /* Text.Whitespace */ /* Literal.Number.Float */
@@ -192,10 +182,7 @@
 } /* Name.Builtin.Pseudo */
 .highlight .vc {
   color: #40ffff;
-} /* Name.Variable.Class */
-.highlight .vg {
-  color: #40ffff;
-} /* Name.Variable.Global */
+} /* Name.Variable.Class */ /* Name.Variable.Global */
 .highlight .vi {
   color: #40ffff;
 } /* Name.Variable.Instance */
