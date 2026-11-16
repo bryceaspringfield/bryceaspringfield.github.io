@@ -23,11 +23,7 @@
   color: #999999;
   font-weight: bold;
   font-style: italic;
-} /* Comment.Preproc */
-.highlight .c1 {
-  color: #999988;
-  font-style: italic;
-} /* Comment.Single */
+} /* Comment.Preproc */ /* Comment.Single */
 .highlight .cs {
   color: #999999;
   font-weight: bold;
@@ -53,7 +49,10 @@
 } /* Generic.Inserted */
 .highlight .go {
   color: #888888;
-} /* Generic.Output */ /* Generic.Prompt */
+} /* Generic.Output */
+.highlight .gp {
+  color: #555555;
+} /* Generic.Prompt */
 .highlight .gs {
   font-weight: bold;
 } /* Generic.Strong */
@@ -74,11 +73,7 @@
 .highlight .kn {
   color: #000000;
   font-weight: bold;
-} /* Keyword.Namespace */
-.highlight .kp {
-  color: #000000;
-  font-weight: bold;
-} /* Keyword.Pseudo */
+} /* Keyword.Namespace */ /* Keyword.Pseudo */
 .highlight .kr {
   color: #000000;
   font-weight: bold;
