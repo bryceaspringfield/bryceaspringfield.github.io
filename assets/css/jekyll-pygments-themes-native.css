@@ -39,11 +39,7 @@
 .highlight .cp {
   color: #cd2828;
   font-weight: bold;
-} /* Comment.Preproc */
-.highlight .c1 {
-  color: #999999;
-  font-style: italic;
-} /* Comment.Single */
+} /* Comment.Preproc */ /* Comment.Single */
 .highlight .cs {
   color: #e50808;
   font-weight: bold;
@@ -147,10 +143,7 @@
 .highlight .nt {
   color: #6ab825;
   font-weight: bold;
-} /* Name.Tag */
-.highlight .nv {
-  color: #40ffff;
-} /* Name.Variable */ /* Operator.Word */
+} /* Name.Tag */ /* Name.Variable */ /* Operator.Word */
 .highlight .w {
   color: #666666;
 } /* Text.Whitespace */ /* Literal.Number.Float */
@@ -177,7 +170,10 @@
 } /* Literal.String.Heredoc */
 .highlight .si {
   color: #ed9d13;
-} /* Literal.String.Interpol */ /* Literal.String.Other */
+} /* Literal.String.Interpol */
+.highlight .sx {
+  color: #ffa500;
+} /* Literal.String.Other */
 .highlight .sr {
   color: #ed9d13;
 } /* Literal.String.Regex */ /* Literal.String.Single */
