@@ -39,7 +39,11 @@
 .highlight .cp {
   color: #cd2828;
   font-weight: bold;
-} /* Comment.Preproc */ /* Comment.Single */
+} /* Comment.Preproc */
+.highlight .c1 {
+  color: #999999;
+  font-style: italic;
+} /* Comment.Single */
 .highlight .cs {
   color: #e50808;
   font-weight: bold;
@@ -64,10 +68,7 @@
 } /* Generic.Inserted */
 .highlight .go {
   color: #cccccc;
-} /* Generic.Output */
-.highlight .gp {
-  color: #aaaaaa;
-} /* Generic.Prompt */
+} /* Generic.Output */ /* Generic.Prompt */
 .highlight .gs {
   color: #d0d0d0;
   font-weight: bold;
@@ -146,10 +147,7 @@
 .highlight .nt {
   color: #6ab825;
   font-weight: bold;
-} /* Name.Tag */
-.highlight .nv {
-  color: #40ffff;
-} /* Name.Variable */ /* Operator.Word */
+} /* Name.Tag */ /* Name.Variable */ /* Operator.Word */
 .highlight .w {
   color: #666666;
 } /* Text.Whitespace */ /* Literal.Number.Float */
@@ -176,10 +174,7 @@
 } /* Literal.String.Heredoc */
 .highlight .si {
   color: #ed9d13;
-} /* Literal.String.Interpol */
-.highlight .sx {
-  color: #ffa500;
-} /* Literal.String.Other */
+} /* Literal.String.Interpol */ /* Literal.String.Other */
 .highlight .sr {
   color: #ed9d13;
 } /* Literal.String.Regex */ /* Literal.String.Single */
