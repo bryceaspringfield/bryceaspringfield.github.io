@@ -87,10 +87,7 @@
 .highlight .kn {
   color: #6ab825;
   font-weight: bold;
-} /* Keyword.Namespace */
-.highlight .kp {
-  color: #6ab825;
-} /* Keyword.Pseudo */
+} /* Keyword.Namespace */ /* Keyword.Pseudo */
 .highlight .kr {
   color: #6ab825;
   font-weight: bold;
@@ -173,10 +170,7 @@
 } /* Literal.String.Heredoc */
 .highlight .si {
   color: #ed9d13;
-} /* Literal.String.Interpol */
-.highlight .sx {
-  color: #ffa500;
-} /* Literal.String.Other */
+} /* Literal.String.Interpol */ /* Literal.String.Other */
 .highlight .sr {
   color: #ed9d13;
 } /* Literal.String.Regex */ /* Literal.String.Single */
