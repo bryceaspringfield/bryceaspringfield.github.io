@@ -108,7 +108,11 @@
 .highlight .ne {
   color: #990000;
   font-weight: bold;
-} /* Name.Exception */ /* Name.Function */
+} /* Name.Exception */
+.highlight .nf {
+  color: #990000;
+  font-weight: bold;
+} /* Name.Function */
 .highlight .nl {
   color: #990000;
   font-weight: bold;
@@ -130,10 +134,7 @@
 } /* Literal.Number.Integer */
 .highlight .mo {
   color: #009999;
-} /* Literal.Number.Oct */
-.highlight .sb {
-  color: #d01040;
-} /* Literal.String.Backtick */
+} /* Literal.Number.Oct */ /* Literal.String.Backtick */
 .highlight .sc {
   color: #d01040;
 } /* Literal.String.Char */

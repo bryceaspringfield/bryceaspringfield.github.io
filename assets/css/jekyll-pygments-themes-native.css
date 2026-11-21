@@ -126,7 +126,10 @@
 } /* Name.Entity */
 .highlight .ne {
   color: #bbbbbb;
-} /* Name.Exception */ /* Name.Function */
+} /* Name.Exception */
+.highlight .nf {
+  color: #447fcf;
+} /* Name.Function */
 .highlight .nl {
   color: #d0d0d0;
 } /* Name.Label */
@@ -155,10 +158,7 @@
 } /* Literal.Number.Integer */
 .highlight .mo {
   color: #3677a9;
-} /* Literal.Number.Oct */
-.highlight .sb {
-  color: #ed9d13;
-} /* Literal.String.Backtick */
+} /* Literal.Number.Oct */ /* Literal.String.Backtick */
 .highlight .sc {
   color: #ed9d13;
 } /* Literal.String.Char */
