@@ -6,8 +6,6 @@ subtitle: Predoctoral Researcher, <a href='https://mitsloan.mit.edu/'>MIT Sloan 
 
 profile:
   align: right
-  image: prof_pic.jpg
-  image_circular: false
   more_info: >
     <p>MIT Sloan School of Management</p>
     <p>Cambridge, MA</p>
