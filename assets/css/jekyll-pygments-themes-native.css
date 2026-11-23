@@ -87,7 +87,10 @@
 .highlight .kn {
   color: #6ab825;
   font-weight: bold;
-} /* Keyword.Namespace */ /* Keyword.Pseudo */
+} /* Keyword.Namespace */
+.highlight .kp {
+  color: #6ab825;
+} /* Keyword.Pseudo */
 .highlight .kr {
   color: #6ab825;
   font-weight: bold;
@@ -155,7 +158,10 @@
 } /* Literal.Number.Integer */
 .highlight .mo {
   color: #3677a9;
-} /* Literal.Number.Oct */ /* Literal.String.Backtick */
+} /* Literal.Number.Oct */
+.highlight .sb {
+  color: #ed9d13;
+} /* Literal.String.Backtick */
 .highlight .sc {
   color: #ed9d13;
 } /* Literal.String.Char */
