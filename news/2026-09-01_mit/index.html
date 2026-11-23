@@ -31,7 +31,7 @@ ninja.data = [{
           },
         },{id: "nav-projects",
           title: "projects",
-          description: "Software and research projects.",
+          description: "Software, browser add-ons, and research projects.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/projects/";
@@ -49,7 +49,27 @@ ninja.data = [{
           section: "News",},{id: "news-joined-the-mit-sloan-school-of-management-as-a-predoctoral-researcher-working-with-mert-demirer-and-catherine-wolfram",
           title: 'Joined the MIT Sloan School of Management as a predoctoral researcher, working with...',
           description: "",
-          section: "News",},{id: "projects-engaging-usage-board",
+          section: "News",},{id: "projects-ai-downtime",
+          title: 'AI Downtime',
+          description: "The reliability of AI services and the cost of their outages.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/ai_downtime/";
+            },},{id: "projects-a-response-to-baby-busts-and-growth-booms",
+          title: 'A Response to Baby Busts and Growth Booms',
+          description: "A replication and response to Acemoglu, Autor, Beirne, and Scott (2026).",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/baby_busts_response/";
+            },},{id: "projects-bds-boycott-helper",
+          title: 'BDS Boycott Helper',
+          description: "An add-on for Firefox and Chrome which marks sites on the BDS movement&#39;s boycott and divestment lists.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/bds_boycott_helper/";
+            },},{id: "projects-captcha-checkbox-helper",
+          title: 'Captcha Checkbox Helper',
+          description: "An add-on for Firefox and Chrome which ticks the reCAPTCHA and hCaptcha checkbox.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/captcha_checkbox_helper/";
+            },},{id: "projects-engaging-usage-board",
           title: 'Engaging Usage Board',
           description: "A leaderboard of cluster use and efficiency on MIT&#39;s Engaging cluster.",
           section: "Projects",handler: () => {
@@ -64,9 +84,24 @@ ninja.data = [{
           description: "A question and answer bank for the daily word game Krillion, by answer tier.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/krillion_bank/";
+            },},{id: "projects-a-teacher-in-the-presidency",
+          title: 'A Teacher in the Presidency',
+          description: "Factional co-optation and Peru&#39;s national teacher strikes, 1972 to 2024.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/labor_cooptation_peru/";
+            },},{id: "projects-language-model-usage",
+          title: 'Language Model Usage',
+          description: "The use, prices, and performance of language models, from OpenRouter and Artificial Analysis data.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/llm_usage/";
+            },},{id: "projects-herds-hives-and-hierarchies",
+          title: 'Herds, Hives, and Hierarchies',
+          description: "The organizational structures of protest movements and the success of contentious activity.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/movement_structures/";
             },},{id: "projects-open-coupons",
           title: 'Open Coupons',
-          description: "A browser extension which tries known coupon codes at checkout, with an open code database and no tracking.",
+          description: "An add-on for Firefox and Chrome which tries known coupon codes at checkout, with an open code database and no tracking.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/open_coupons/";
             },},{id: "projects-price-error-finder",
@@ -79,11 +114,41 @@ ninja.data = [{
           description: "Patch bundles for the Morphe patcher. Reddit Keyword Filter hides posts and comments by keyword, community, account, and post type, and YouTube Extras adds player options.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/reddit_keyword_filter/";
+            },},{id: "projects-religious-attendance-and-the-value-of-time",
+          title: 'Religious Attendance and the Value of Time',
+          description: "Time spent at religious services in the United States, 2003 to 2025, and the output forgone.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/religious_attendance/";
+            },},{id: "projects-rtings-daily-panel",
+          title: 'RTINGS Daily Panel',
+          description: "A daily archive of the RTINGS results table, for a panel of product measurements, revisions, and prices.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/rtings_panel/";
             },},{id: "projects-software-activity",
           title: 'Software Activity',
-          description: "Research pages on where software activity is growing, by registry, store, and directory.",
+          description: "Where software activity is growing, by registry, store, and directory.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/software_activity/";
+            },},{id: "projects-strike-action-and-neighborhood-labor-markets",
+          title: 'Strike Action and Neighborhood Labor Markets',
+          description: "Do US strikes since 2021 change employment, wages, and establishment counts in adjacent counties?",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/strike_spillovers/";
+            },},{id: "projects-union-boycott-helper",
+          title: 'Union Boycott Helper',
+          description: "An add-on for Firefox and Chrome which marks sites on the AFL-CIO boycott list.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/union_boycott_helper/";
+            },},{id: "projects-ideology-and-u-s-military-support",
+          title: 'Ideology and U.S. Military Support',
+          description: "Ideological factors in US military support in armed conflicts, 1975 to 2017.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/us_military_aid/";
+            },},{id: "projects-state-oppression-in-xinjiang",
+          title: 'State Oppression in Xinjiang',
+          description: "Births, birth control, arrests, and detention in Xinjiang, from Chinese official statistics.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/xinjiang_statistics/";
             },},{
         id: 'social-email',
         title: 'email',
