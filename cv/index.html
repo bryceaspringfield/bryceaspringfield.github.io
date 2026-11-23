@@ -39,7 +39,7 @@ ninja.data = [{
           },
         },{id: "nav-projects",
           title: "projects",
-          description: "Software I have written.",
+          description: "Software and research projects.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/projects/";
@@ -57,11 +57,41 @@ ninja.data = [{
           section: "News",},{id: "news-joined-the-mit-sloan-school-of-management-as-a-predoctoral-researcher-working-with-mert-demirer-and-catherine-wolfram",
           title: 'Joined the MIT Sloan School of Management as a predoctoral researcher, working with...',
           description: "",
-          section: "News",},{id: "projects-reddit-keyword-filter",
-          title: 'Reddit Keyword Filter',
-          description: "A patch bundle for the Morphe patcher which filters Reddit posts and comments by keyword, subreddit, user, and post type.",
+          section: "News",},{id: "projects-engaging-usage-board",
+          title: 'Engaging Usage Board',
+          description: "A leaderboard of cluster use and efficiency on MIT&#39;s Engaging cluster.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/engaging_usage/";
+            },},{id: "projects-horizon",
+          title: 'Horizon',
+          description: "A financial planner in the browser, with projections, US taxes, Monte Carlo runs, and encrypted storage.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/horizon/";
+            },},{id: "projects-krillion-bank",
+          title: 'Krillion Bank',
+          description: "A question and answer bank for the daily word game Krillion, by answer tier.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/krillion_bank/";
+            },},{id: "projects-open-coupons",
+          title: 'Open Coupons',
+          description: "A browser extension which tries known coupon codes at checkout, with an open code database and no tracking.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/open_coupons/";
+            },},{id: "projects-price-error-finder",
+          title: 'Price Error Finder',
+          description: "Mistaken and unusually deep prices from deal forums, fare trackers, and price-history sites, updated hourly.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/price_error_finder/";
+            },},{id: "projects-morphe-patches",
+          title: 'Morphe Patches',
+          description: "Patch bundles for the Morphe patcher. Reddit Keyword Filter hides posts and comments by keyword, community, account, and post type, and YouTube Extras adds player options.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/reddit_keyword_filter/";
+            },},{id: "projects-software-activity",
+          title: 'Software Activity',
+          description: "Research pages on where software activity is growing, by registry, store, and directory.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/software_activity/";
             },},{
         id: 'social-email',
         title: 'email',
