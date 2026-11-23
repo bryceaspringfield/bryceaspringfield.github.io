@@ -8,5 +8,3 @@ github: https://github.com/bryceaspringfield/morphe
 ---
 
 These are patch bundles for [Morphe](https://github.com/MorpheApp), the open-source Android app patcher. Reddit Keyword Filter adds a filter to the official Reddit app which hides posts and comments matching keywords, communities, accounts, or post types, with separate settings for each feed, and switches to hide navigation tabs. YouTube Extras adds player options to the official YouTube app.
-
-Source code and releases: [github.com/bryceaspringfield/morphe](https://github.com/bryceaspringfield/morphe).

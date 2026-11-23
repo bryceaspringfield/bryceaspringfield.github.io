@@ -2,10 +2,10 @@
 layout: page
 title: projects
 permalink: /projects/
-description: Software and research projects.
+description: Software, browser add-ons, and research projects.
 nav: true
 nav_order: 3
-display_categories: [software, research]
+display_categories: [software, add-ons, research]
 horizontal: false
 ---
 
