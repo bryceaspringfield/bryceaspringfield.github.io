@@ -2,10 +2,10 @@
 layout: page
 title: projects
 permalink: /projects/
-description: Software I have written.
+description: Software and research projects.
 nav: true
 nav_order: 3
-display_categories: [software]
+display_categories: [software, research]
 horizontal: false
 ---
 

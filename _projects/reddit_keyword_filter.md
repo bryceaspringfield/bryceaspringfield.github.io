@@ -1,12 +1,12 @@
 ---
 layout: page
-title: Reddit Keyword Filter
-description: A patch bundle for the Morphe patcher which filters Reddit posts and comments by keyword, subreddit, user, and post type.
-importance: 1
+title: Morphe Patches
+description: Patch bundles for the Morphe patcher. Reddit Keyword Filter hides posts and comments by keyword, community, account, and post type, and YouTube Extras adds player options.
+importance: 2
 category: software
-github: https://github.com/bryceaspringfield/morphe-reddit-keyword-filter
+github: https://github.com/bryceaspringfield/morphe
 ---
 
-Reddit Keyword Filter is a patch bundle for [Morphe](https://github.com/MorpheApp), the open-source Android app patcher. It adds a filter to the official Reddit app which hides posts and comments matching keywords, subreddits, users, or post types, with separate settings for each feed.
+These are patch bundles for [Morphe](https://github.com/MorpheApp), the open-source Android app patcher. Reddit Keyword Filter adds a filter to the official Reddit app which hides posts and comments matching keywords, communities, accounts, or post types, with separate settings for each feed, and switches to hide navigation tabs. YouTube Extras adds player options to the official YouTube app.
 
-Source code and releases: [github.com/bryceaspringfield/morphe-reddit-keyword-filter](https://github.com/bryceaspringfield/morphe-reddit-keyword-filter).
+Source code and releases: [github.com/bryceaspringfield/morphe](https://github.com/bryceaspringfield/morphe).
