@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Language Model Usage"
+title: "LLM Usage"
 description: "The use, prices, and performance of language models, from OpenRouter and Artificial Analysis data."
 importance: 2
 category: research
