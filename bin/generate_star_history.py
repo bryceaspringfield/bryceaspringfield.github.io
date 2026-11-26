@@ -33,10 +33,7 @@ from datetime import datetime, timezone
 
 API = "https://api.github.com"
 PER_PAGE = 100
-# GitHub refuses to paginate past 400 pages on this endpoint.
 MAX_PAGE = 400
-# How many pages to sample across the full range. The curve is smooth enough
-# that sampling beats fetching all ~160 pages of a 16k-star repo on every push.
 SAMPLES = 28
 
 THEMES = {
@@ -87,7 +84,6 @@ def _get(url: str, token: str | None, accept: str) -> tuple[object, dict]:
 
 
 def fetch_points(repo: str, token: str | None) -> tuple[list[tuple[datetime, int]], int, bool]:
-    """Return ([(date, cumulative_stars)], total, truncated_by_pagination_cap)."""
     meta, _ = _get(f"{API}/repos/{repo}", token, "application/vnd.github+json")
     total = int(meta.get("stargazers_count", 0))
     if total == 0:
@@ -111,7 +107,6 @@ def fetch_points(repo: str, token: str | None) -> tuple[list[tuple[datetime, int
             continue
         first = batch[0].get("starred_at")
         if first:
-            # Everything on earlier pages was starred before this entry.
             points.append((_parse(first), (page - 1) * PER_PAGE + 1))
         if page == last_page:
             last = batch[-1].get("starred_at")
@@ -119,22 +114,12 @@ def fetch_points(repo: str, token: str | None) -> tuple[list[tuple[datetime, int
                 newest = _parse(last)
                 points.append((newest, (page - 1) * PER_PAGE + len(batch)))
 
-    # GitHub stops paginating this endpoint at page 400, so for a repository
-    # with more than 40,000 stars we cannot observe when the later ones arrived.
     capped = last_page >= MAX_PAGE and total > MAX_PAGE * PER_PAGE
 
     if capped:
-        # Back-dating the full total onto the last *observable* star would draw a
-        # vertical cliff at that old date and freeze the x-axis there, inventing
-        # history that was never measured. The current total on today's date is a
-        # fact, so anchor there and let the segment between be interpolated, the
-        # same approximation already used between every other sampled point.
-        # Truncated to midnight so reruns within a day stay byte-identical.
         now = datetime.now(timezone.utc).replace(hour=0, minute=0, second=0, microsecond=0)
         points.append((now, total))
     elif newest and total > points[-1][1]:
-        # Dated to the most recent star rather than "now", so a run on a day with
-        # no new stars produces a byte-identical file instead of a junk commit.
         points.append((newest, total))
 
     points.sort(key=lambda p: p[0])
@@ -152,7 +137,6 @@ def _parse(value: str) -> datetime:
 
 
 def _nice_ceiling(value: int) -> tuple[int, int]:
-    """Round an axis maximum up to something a human would pick."""
     if value <= 10:
         return max(value, 1), max(value, 1)
     magnitude = 10 ** (len(str(value)) - 1)
@@ -172,7 +156,6 @@ def _fmt_count(n: int) -> str:
 
 
 def _smooth_path(pts: list[tuple[float, float]]) -> str:
-    """Catmull-Rom through the points, emitted as cubic beziers."""
     if len(pts) < 2:
         return ""
     if len(pts) == 2:
@@ -215,9 +198,6 @@ def render(points: list[tuple[datetime, int]], total: int, repo: str, theme: str
         )
         v += y_step
 
-    # Tick on calendar years across the whole range, not on sampled points:
-    # early years are all inside page 1, so point-derived ticks skip them and
-    # the axis reads as though data were missing.
     first_year, last_year = points[0][0].year, points[-1][0].year
     every = max(1, math.ceil((last_year - first_year + 1) / 12))
     years = [
@@ -225,14 +205,12 @@ def render(points: list[tuple[datetime, int]], total: int, repo: str, theme: str
         for y in range(first_year, last_year + 1)
         if (y - first_year) % every == 0
     ]
-    # Drop a tick that would collide with the axis edges.
     years = [d for d in years if M_L - 1 <= sx(d) <= W - M_R + 1]
     x_labels = [
         f'<text x="{sx(d):.2f}" y="{M_T + plot_h + 26}" text-anchor="middle" class="ax">{d.year}</text>'
         for d in years
     ]
 
-    # Say so rather than passing off an interpolated segment as measured data.
     subtitle = (
         f"{repo} · beyond {MAX_PAGE * PER_PAGE:,} stars the API stops paginating, so the tail is interpolated"
         if capped
@@ -240,7 +218,7 @@ def render(points: list[tuple[datetime, int]], total: int, repo: str, theme: str
     )
 
     lx, ly = xy[-1]
-    uid = theme  # keeps gradient ids unique if both files are ever inlined together
+    uid = theme
 
     return f"""<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" aria-label="Star history for {repo}: {total} stars">
   <title>Star history for {repo}</title>

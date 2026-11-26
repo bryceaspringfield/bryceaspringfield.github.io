@@ -8,7 +8,6 @@ from scholarly import scholarly
 
 
 def load_scholar_user_id() -> str:
-    """Load the Google Scholar user ID from the configuration file."""
     config_file = "_data/socials.yml"
     if not os.path.exists(config_file):
         print(
@@ -37,11 +36,9 @@ OUTPUT_FILE: str = "_data/citations.yml"
 
 
 def get_scholar_citations() -> None:
-    """Fetch and update Google Scholar citation data."""
     print(f"Fetching citations for Google Scholar ID: {SCHOLAR_USER_ID}")
     today = datetime.now().strftime("%Y-%m-%d")
 
-    # Check if the output file was already updated today
     if os.path.exists(OUTPUT_FILE):
         try:
             with open(OUTPUT_FILE, "r") as f:
@@ -108,7 +105,6 @@ def get_scholar_citations() -> None:
                 f"Error processing publication '{pub.get('bib', {}).get('title', 'Unknown')}': {e}. This publication will be skipped."
             )
 
-    # Compare new data with existing data
     if existing_data and existing_data.get("papers") == citation_data["papers"]:
         print("No changes in citation data. Skipping file update.")
         return

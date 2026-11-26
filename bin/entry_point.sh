@@ -6,7 +6,6 @@ echo "Entry point script running"
 CONFIG_FILE=_config.yml
 DOCKER_DESTINATION=/tmp/_site
 
-# Function to manage Gemfile.lock
 manage_gemfile_lock() {
     git config --global --add safe.directory /srv/jekyll
     if command -v git &> /dev/null && [ -f Gemfile.lock ]; then
