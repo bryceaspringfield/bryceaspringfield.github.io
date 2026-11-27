@@ -199,7 +199,10 @@
 } /* Literal.String.Heredoc */
 .highlight .si {
   color: #ed9d13;
-} /* Literal.String.Interpol */ /* Literal.String.Other */
+} /* Literal.String.Interpol */
+.highlight .sx {
+  color: #ffa500;
+} /* Literal.String.Other */
 .highlight .sr {
   color: #ed9d13;
 } /* Literal.String.Regex */
@@ -214,7 +217,10 @@
 } /* Name.Builtin.Pseudo */
 .highlight .vc {
   color: #40ffff;
-} /* Name.Variable.Class */ /* Name.Variable.Global */
+} /* Name.Variable.Class */
+.highlight .vg {
+  color: #40ffff;
+} /* Name.Variable.Global */
 .highlight .vi {
   color: #40ffff;
 } /* Name.Variable.Instance */
