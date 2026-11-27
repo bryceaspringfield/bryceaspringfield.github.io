@@ -214,10 +214,7 @@
 } /* Name.Builtin.Pseudo */
 .highlight .vc {
   color: #40ffff;
-} /* Name.Variable.Class */
-.highlight .vg {
-  color: #40ffff;
-} /* Name.Variable.Global */
+} /* Name.Variable.Class */ /* Name.Variable.Global */
 .highlight .vi {
   color: #40ffff;
 } /* Name.Variable.Instance */
