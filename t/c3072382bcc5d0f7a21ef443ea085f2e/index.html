@@ -894,7 +894,33 @@ const dsel=$("#capture");
 dsel.value=META.latest;
 if((META.captures||[]).length<2)dsel.style.display="none";
 syncAllminMode(false);
-sel.onchange=()=>loadSilo(sel.value);
+function hashState(){
+  const p=new URLSearchParams(location.hash.slice(1));
+  const s=p.get("silo"),d=p.get("date");
+  return {silo:META.silos.some(x=>x.id===s)?s:null,
+          date:(META.captures||[META.latest]).includes(d)?d:null};
+}
+function setHash(){
+  const p=new URLSearchParams();p.set("silo",sel.value);
+  if(curDate!==META.latest)p.set("date",curDate);
+  const h="#"+p.toString();
+  if(location.hash!==h)history.pushState(null,"",h);
+  document.title="RTINGS "+sel.value+(curDate!==META.latest?" · "+curDate:"");
+}
+async function openFromHash(){
+  const h=hashState();
+  if(h.silo)sel.value=h.silo;
+  const want=h.date||META.latest;
+  if(want!==curDate){
+    const prev=curDate;curDate=want;dsel.value=want;
+    try{await loadSilo(sel.value);}
+    catch(e){curDate=prev;dsel.value=prev;await loadSilo(sel.value);}
+  }else await loadSilo(sel.value);
+  $("#snapdate").textContent="· capture "+curDate;
+  setHash();
+}
+window.addEventListener("popstate",openFromHash);
+sel.onchange=async()=>{await loadSilo(sel.value);setHash();};
 dsel.onchange=async()=>{
   const want=dsel.value,prev=curDate;
   const view={shown:cur.shown.slice(),filters:cur.filters,
@@ -903,6 +929,7 @@ dsel.onchange=async()=>{
   try{
     await loadSilo(sel.value,view);
     $("#snapdate").textContent="· capture "+curDate;
+    setHash();
   }catch(e){
     curDate=prev;dsel.value=prev;
     $("#body").className="empty";
@@ -910,5 +937,5 @@ dsel.onchange=async()=>{
       "It lives in data/"+want+".js beside this page — keep them together.";
   }
 };
-loadSilo(sel.value);
+openFromHash();
 </script> </body> </html>
